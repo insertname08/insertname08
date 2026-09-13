@@ -1,0 +1,15 @@
+baseURL: "https://insertname08.github.io/"
+languageCode: "es"
+title: "Yahya — Blog de Ciberseguridad"
+theme: "PaperMod"
+
+params:
+  author: "Yahya"
+  description: "Analista de ciberseguridad | OT/ICS"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  socialIcons:
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/yahyahajjihajji/"
+    - name: "github"
+      url: "https://github.com/insertname08"
