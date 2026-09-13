@@ -1,15 +1,73 @@
-baseURL: "https://insertname08.github.com/insertname08/"
-languageCode: "es"
+baseURL: "https://insertname08.github.io/insertname08/"
+locale: "es-ES"
 title: "Yahya — Blog de Ciberseguridad"
 theme: "PaperMod"
+paginate: 10
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - name: "Archivo"
+      url: "archives/"
+      weight: 10
+    - name: "Buscar"
+      url: "search/"
+      weight: 20
+    - name: "Tags"
+      url: "tags/"
+      weight: 30
 
 params:
+  env: production
   author: "Yahya"
   description: "Analista de ciberseguridad | OT/ICS"
+  keywords: ["ciberseguridad", "OT", "ICS", "pentesting", "labs"]
+  DateFormat: "2 January 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
   ShowReadingTime: true
   ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  comments: false
+
+  homeInfoParams:
+    Title: "Hola 👋"
+    Content: >
+      Blog personal donde documento mi camino en ciberseguridad,
+      con foco en OT/ICS: labs, apuntes y reflexiones del proceso.
+
   socialIcons:
     - name: "linkedin"
       url: "https://www.linkedin.com/in/yahyahajjihajji/"
     - name: "github"
       url: "https://github.com/insertname08"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+taxonomies:
+  tag: tags
