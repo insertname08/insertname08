@@ -48,12 +48,6 @@ params:
   disableSpecial1stPost: false
   comments: false
 
-  homeInfoParams:
-    Title: "Hola 👋"
-    Content: >
-      Blog personal donde documento mi camino en ciberseguridad,
-      con foco en OT/ICS: labs, apuntes y reflexiones del proceso.
-
   socialIcons:
     - name: "linkedin"
       url: "https://www.linkedin.com/in/yahyahajjihajji/"
